@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+  </head>
+  <body>
+      <div class="container-fluid">
+        
+       <div class="row mt-4">
+            <div class="card mx-auto gameCard">
+            <div class="card-header bg-dark">
+                <div class="continaer">
+                 <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="display-2">Star</h1>
+                        <h1 class="display-2">Wars</h1>  
+                        <h1 class="display-4" id="pickFighterHeading">Pick Your Fighter!</h1>    
+                    </div>
+                 </div>
+             </div>    
+            </div>
+            <div class="card-body bg-secondary">
+                <div class="container">
+                 <h1 class="display-5 text-center mb-3">Dark Side</h1>
+                  <div class="row" id="darkSideCharacters">
+                    <div class="col-md-4 d-flex flex-column align-items-center darkSide" id="maul-card">
+                        <img src="assets/images/darthMaul.png" alt="" class="img-fluid starWarsChars float-left" id="maul">
+                        <div class="container d-none">
+                           <div class="row d-flex justify-content-center">
+                                <div class="health my-3">
+                                    <h5>Health</h5>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="progress healthPurple">
+                                              <div class="progress-bar" id="healthmaul" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="damage my-3">
+                                    <h5>Force</h5>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="progress forceRed">
+                                              <div class="progress-bar" id="forcemaul" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>   
+                           </div>
+                                
+                        </div>
+                        
+                     </div>
+                    
+                    
+                     <div class="col-md-4 d-flex flex-column align-items-center darkSide" id="palpatine-card">
+                        <img src="assets/images/palpatine.png" alt="" class="img-fluid starWarsChars float-left" id="palpatine">
+                        <div class="container d-none">
+                            <div class="row d-flex justify-content-center">
+                                <div class="health my-3">
+                                    <h5>Health</h5>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="progress healthPurple">
+                                              <div class="progress-bar" id="healthpalpatine" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="damage my-3">
+                                    <h5>Force</h5>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="progress forceRed">
+                                              <div class="progress-bar" id="forcepalpatine" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                        
+                     </div>
+                     
+                     <div class="col-md-4 d-flex flex-column align-items-center darkSide" id="darth-card">
+                        <img src="assets/images/darthVader.png" alt="" class="img-fluid starWarsChars" id="vader">
+                        <div class="container d-none">
+                            <div class="row d-flex justify-content-center">
+                                <div class="health my-3">
+                                    <h5>Health</h5>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="progress healthPurple">
+                                              <div class="progress-bar" id="healthvader" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="damage my-3">
+                                    <h5>Force</h5>
+                                </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="progress forceRed">
+                                              <div class="progress-bar" id="forcevader" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                         
+                     </div>
+                </div> 
+                <h1 class="display-5 text-center mt-5">The Force</h1>
+                <div class="row" id="goodSideCharacters">
+                    
+                     <div class="col-md-4 d-flex flex-column align-items-center goodSide" id="yoda-card">
+                            <img src="assets/images/yoda.png" alt="" class="img-fluid starWarsChars" id="yoda">
+                            <div class="container d-none">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="health my-3">
+                                        <h5>Health</h5>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                               
+                                                <div class="progress healthBlue">
+                                                  <div class="progress-bar" id="healthyoda" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="damage my-3">
+                                        <h5>Force</h5>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="progress forceGreen">
+                                                  <div class="progress-bar" id="forceyoda" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                         
+                     </div>
+                     <div class="col-md-4 d-flex flex-column align-items-center goodSide" id="luke-card">
+                            <img src="assets/images/luke.png" alt="" class="img-fluid starWarsChars" id="luke">
+                            <div class="container d-none">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="health my-3">
+                                        <h5>Health</h5>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="progress healthBlue">
+                                                  <div class="progress-bar" id="healthluke" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="damage my-3">
+                                        <h5>Force</h5>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="progress forceGreen">
+                                                  <div class="progress-bar " id="forceluke"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                     </div> 
+                     <div class="col-md-4 d-flex flex-column align-items-center goodSide" id="obiWan-card">
+                            <img src="assets/images/obiWan.png" alt="" class="img-fluid starWarsChars" id="obiWan">
+                            <div class="container d-none">
+                                <div class="row d-flex justify-content-center">
+                                    <div class="health my-3">
+                                        <h5>Health</h5>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="progress healthBlue">
+                                                  <div class="progress-bar" id="healthobiWan"  role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="damage my-3">
+                                        <h5>Force</h5>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <div class="progress forceGreen">
+                                                  <div class="progress-bar"  id="forceobiWan" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ></div>
+                                                </div> 
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                            </div>
+                         
+                     </div>
+                  </div>
+                  
+                  
+                  
+                  
+                  
+              </div>    
+            </div>
+        </div>   
+       </div>
+       <!-- Modal -->
+        <div class="modal fade" id="fightingStageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+             <div class="modal-header bg-dark" id="fighterStageHeading">
+                <h1 class="display-4 mx-auto">Attack!</h1>
+              </div>
+              <div class="modal-body bg-secondary pb-4" id="fightingStage">
+                <div class="row">
+                   <div class="col-md-5 attackerCard">
+
+                   </div>
+                   <div class="col-md-2 d-flex flex-column justify-content-center align-items-center">
+                       <h1 class="heading-3">vs.</h1>
+                       <button class="btn btn-warning attack">Attack!</button>
+                   </div>
+                   <div class="col-md-5 defenderCard">
+
+                   </div>
+               </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+       <audio id="soundTrack">
+              <source src="assets/sounds/SoundTrack.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="yodaSound">
+              <source src="assets/sounds/Yoda.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="palpatineSound">
+              <source src="assets/sounds/palpatine.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="maulSound">
+              <source src="assets/sounds/maul.wav" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="vaderSound">
+              <source src="assets/sounds/vader.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="obiWanSound">
+              <source src="assets/sounds/obiWan.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="lukeSound">
+              <source src="assets/sounds/luke.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <audio id="saberSound">
+              <source src="assets/sounds/Lightsabers.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+  </body>
+</html>

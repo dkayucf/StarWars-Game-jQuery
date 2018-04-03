@@ -1,0 +1,157 @@
+@font-face {
+    font-family:'Star Jedi Rounded';
+    src: url('../fonts/Star Jedi Rounded.eot');
+	src: url('../fonts/Star Jedi Rounded.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Star Jedi Rounded.woff2') format('woff2'),
+		url('../fonts/Star Jedi Rounded.woff') format('woff'),
+		url('../fonts/Star Jedi Rounded.svg#Star Jedi Rounded') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-00FE;
+}
+
+.card.mx-auto.gameCard {
+    box-shadow: 1px 1px 20px 7px #ffffff5c;
+    transform: translateY(-46%) scale(.009);
+}
+
+
+.card-body.bg-secondary {
+    box-shadow: inset 0 0 17px 2px #000000;
+}
+
+.card.bg-secondary.fightingStage {
+    transform: translateY(-40%);
+}
+
+body{
+    background-image: url("../images/starBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.starWarsChars {
+    width: 65%;
+    border-radius: 50%;
+    border: 2px solid #f5c429;
+    box-shadow: 1px 1px 13px 1px #ffffff87;
+    cursor: pointer;
+}
+
+.starWarsChars:hover{
+    -webkit-transform: translateY(-3px) scale(1.05);
+        -ms-transform: translateY(-3px) scale(1.05);
+            transform: translateY(-3px) scale(1.05);
+    -webkit-box-shadow: 3px 3px 18px 2px #00000066;
+            box-shadow: 3px 3px 18px 2px #00000066;
+}
+
+.starWarsChars:hover::after{
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-transform: scaleX(1.6) scaleY(1.8);
+        -ms-transform: scaleX(1.6) scaleY(1.8);
+            transform: scaleX(1.6) scaleY(1.8);
+    opacity: 0;
+}
+
+h1{
+    color: #f5c429;
+    font-family: 'Star Jedi Rounded';
+}
+
+h5{
+    color: #f5c429;
+    font-family: 'Star Jedi Rounded';
+    font-weight: 100;
+}
+
+.attack{
+    font-family: 'Star Jedi Rounded';
+    border: 2px solid black;
+}
+
+.display-2 {
+    line-height: .75;
+}
+
+.modal-dialog {
+    max-width: 60%;
+}
+
+
+.healthPurple{
+    box-shadow: 1px 1px 20px 9px #fb86fb;
+}
+
+
+
+.healthBlue{
+    box-shadow: 1px 1px 20px 9px #2ec1ff;
+}
+
+.forceRed{
+    box-shadow: 1px 1px 20px 9px #d6003f
+}
+
+.forceGreen{
+    box-shadow: 1px 1px 20px 9px #24f460;
+}
+
+div#healthluke {
+    background-color: #2ec1ff;
+}
+
+div#healthyoda {
+    background-color: #2ec1ff;
+}
+
+div#healthobi {
+    background-color: #2ec1ff;
+}
+
+div#healthmaul {
+    background-color: #fb86fb;
+}
+
+div#healthvader {
+    background-color: #fb86fb;
+}
+
+div#healthpalpatine {
+    background-color: #fb86fb;
+}
+
+
+
+
+
+div#forceluke {
+    background-color: #24f460;
+}
+
+div#forceyoda {
+    background-color: #24f460;
+}
+
+div#forceobiWan {
+    background-color: #24f460;
+}
+
+div#forcemaul {
+    background-color: #d6003f;
+}
+
+div#forcevader {
+    background-color: #d6003f;
+}
+
+div#forcepalpatine {
+    background-color: #d6003f;
+}
+
+#goodSideCharacters{
+    margin-top: 30px
+}
